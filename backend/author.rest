@@ -1,0 +1,36 @@
+###Post Author
+POST http://localhost:3000/author
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "bio": "A passionate writer.",
+    "avatar": "http://example.com/avatar.jpg"
+}
+
+###Get all
+GET http://localhost:3000/author
+
+###Get by id
+GET http://localhost:3000/author/1
+
+
+###Post by author
+PATCH http://localhost:3000/author/1
+Content-Type: application/json
+
+{
+    "blogs": [
+        {
+            "title": "New Blog Title",
+            "description": "Updated description for the blog.",
+            "image": "http://example.com/new-image.jpg",
+            "comments": [
+                {
+                    "content": "This is a comment on the new blog."
+                }
+            ]
+        }
+    ]
+}
+
