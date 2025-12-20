@@ -9,7 +9,7 @@ import {
   RelationId,
 } from 'typeorm';
 import { Author } from 'src/author/entities/author.entity';
-import { Comment } from './comment.entity';
+import { Comment } from 'src/comment/entities/comment.entity';
 
 @Entity()
 export class Blog {

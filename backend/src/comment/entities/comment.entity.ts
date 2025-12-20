@@ -5,7 +5,7 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { Blog } from './blog.entity';
+import { Blog } from 'src/blogs/entities/blog.entity';
 import { Author } from 'src/author/entities/author.entity';
 
 @Entity()

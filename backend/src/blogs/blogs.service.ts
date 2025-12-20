@@ -6,11 +6,11 @@ import {
 } from '@nestjs/common';
 import { CreateBlogDto } from './dto/create-blog.dto';
 import { UpdateBlogDto } from './dto/update-blog.dto';
-import { DeepPartial, EntityManager, Repository } from 'typeorm';
+import { EntityManager, Repository } from 'typeorm';
 import { Blog } from './entities/blog.entity';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Comment } from './entities/comment.entity';
-import { Author } from 'src/author/entities/author.entity';
+import { Comment } from 'src/comment/entities/comment.entity';
+import { Author } from '../author/entities/author.entity';
 
 @Injectable()
 export class BlogsService {

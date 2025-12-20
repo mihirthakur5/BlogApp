@@ -15,13 +15,11 @@ export class TypeOrmExceptionFilter implements ExceptionFilter {
 
     // Postgres unique violation
     if (err?.driverError?.code === '23505') {
-      response
-        .status(409)
-        .json({
-          statusCode: 409,
-          message: 'Conflict',
-          detail: err?.driverError?.detail,
-        });
+      response.status(409).json({
+        statusCode: 409,
+        message: 'Conflict',
+        detail: err?.driverError?.detail,
+      });
       return;
     }
 

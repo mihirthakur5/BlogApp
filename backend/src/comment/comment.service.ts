@@ -6,7 +6,7 @@ import {
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Comment } from './entities/comment.entity';
-import { Blog } from './entities/blog.entity';
+import { Blog } from 'src/blogs/entities/blog.entity';
 import { Author } from 'src/author/entities/author.entity';
 import { CreateCommentDto } from './dto/create-comment.dto';
 

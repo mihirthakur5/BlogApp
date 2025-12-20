@@ -11,8 +11,10 @@ import { EntityManager, Repository } from 'typeorm';
 import { Author } from './entities/author.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Blog } from '../blogs/entities/blog.entity';
-import { Comment } from '../blogs/entities/comment.entity';
+import { Comment } from '../comment/entities/comment.entity';
 import { BlogsService } from 'src/blogs/blogs.service';
+
+interface author {}
 
 @Injectable()
 export class AuthorService {

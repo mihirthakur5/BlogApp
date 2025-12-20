@@ -6,7 +6,7 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import { Blog } from 'src/blogs/entities/blog.entity';
-import { Comment } from 'src/blogs/entities/comment.entity';
+import { Comment } from 'src/comment/entities/comment.entity';
 
 @Entity()
 export class Author {

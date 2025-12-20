@@ -1,5 +1,5 @@
 import { CreateAuthorDto } from 'src/author/dto/create-author.dto';
-import { CreateCommentDto } from './create-comment.dto';
+import { CreateCommentDto } from 'src/comment/dto/create-comment.dto';
 import {
   IsArray,
   IsBoolean,
